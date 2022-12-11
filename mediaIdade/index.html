@@ -1,0 +1,17 @@
+<meta charset="UTF-8">
+<script>
+    function mostra (texto){
+        return document.write(texto + "<br>");
+    }
+
+    var numero = parseInt(prompt("Digite o numero de familiares que possui na sua house"));
+    var media = 0;
+
+    for(var i=0; i<numero; i++){
+        var idade = parseInt(prompt("Digite a idade do familiar " + (i+1)));
+        media = media + idade;
+    }
+
+    mostra("A media da idade de seus familiares é " + media/numero);
+
+</script>

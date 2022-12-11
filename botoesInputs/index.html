@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<input type="digite su sugeston">
+<button>compare com a minha</button>
+
+<script>
+    var segredo = Math.round(Math.random()*10);
+    var input = document.querySelector("input");
+    input.focus();
+
+    function compara(){
+        if(input.value == segredo){
+            alert("VOCÊ acertou");
+        }else{
+            alert("VOCÊ erouuuuu");
+        }
+        input.value = "";
+        input.focus();
+    }
+    
+
+    var botao = document.querySelector("button");
+    botao.onclick = compara;
+
+
+</script>

@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+<script>
+    var num = Math.round(Math.random() * 10);
+   
+
+    var tentativas = 1;
+
+    while(tentativas <= 3){
+        var chute = parseInt(prompt("Tente adivinhar el number: "));
+        if(chute == num){
+            document.write("Parabens! Vc acertou!<br>");
+            break;
+        }
+        else{
+            document.write("Você errou, o número pensado foi <br>" + num);
+        
+        }
+        tentativas ++;
+    }
+
+</script>

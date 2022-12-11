@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<script>
+    function mostra(texto){
+        document.write(texto + "<br>");
+    }
+
+    var vitorias = parseInt(prompt("Número de vitórias: "));
+    var empates = parseInt(prompt("Número de empates: "));
+
+    var pontos = (vitorias * 3) + empates;
+
+    
+    mostra("Os pontos do seu time é " + pontos);
+    if (pontos > 28){
+    mostra ("Seu time está melhor que o ano passado!");
+    }
+    if (pontos < 28){
+    mostra ("Seu time está pior que o ano passado!");
+    }
+    if (pontos == 28){
+    mostra ("Seu time esta igual ao ano passado!");
+    }
+</script>
